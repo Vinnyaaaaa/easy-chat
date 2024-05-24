@@ -1,0 +1,28 @@
+.chat_header__layout {
+  padding: 14px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header_left__container {
+    .header_title {
+      font-size: 20px;
+      font-weight: bolder;
+    }
+  }
+
+  .header_right__container {
+    display: flex;
+    gap: 8px;
+    .apikey_input {
+      :global {
+        .MuiInputBase-root {
+          font-size: 14px;
+          color: #303030;
+          border: none;
+        }
+      }
+    }
+  }
+}

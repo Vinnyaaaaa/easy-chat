@@ -1,0 +1,25 @@
+.chat_message {
+  display: flex;
+  flex-direction: row;
+
+  .chat_message__container {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .chat_message__header {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .chat_message_content {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      border: 1px solid #dedede;
+    }
+  }
+}

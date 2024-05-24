@@ -7,3 +7,5 @@
 - pnpm i
 
 - pnpm run dev
+
+## 预览地址：https://easy-chat-six.vercel.app/ ##

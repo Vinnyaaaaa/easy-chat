@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# easy chat
 
 怎么启动这个项目？
 

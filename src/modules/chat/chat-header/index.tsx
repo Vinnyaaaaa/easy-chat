@@ -14,7 +14,8 @@ export const ChatHeader = () => {
     saveApiKey(inputValue);
   };
 
-  const onValueChange = (e) => setInputValue(e.target.value);
+  const onValueChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setInputValue(e.target.value);
 
   return (
     <div className={styles.chat_header__layout}>

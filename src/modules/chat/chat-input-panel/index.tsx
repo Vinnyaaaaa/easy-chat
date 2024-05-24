@@ -25,14 +25,14 @@ export const ChatInputPanel = () => {
     setLoading(false);
   };
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event: any) => {
     if (event.key === "Enter") {
       event.preventDefault();
       send();
     }
   };
 
-  const handleChange = (e) => setTextareaValue(e.target.value);
+  const handleChange = (e: any) => setTextareaValue(e.target.value);
 
   const handleAddApiKeyTip = () => setOpen(false);
 

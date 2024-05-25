@@ -7,8 +7,8 @@ function App() {
     <ConfigProvider>
       <div className={styles.app}>
         <Chat />
+        <ErrorTips />
       </div>
-      {/* <ErrorTips /> */}
     </ConfigProvider>
   );
 }

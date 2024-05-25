@@ -3,7 +3,10 @@ import { Button } from "../../../components/button";
 import { useStore } from "../../../store";
 import styles from "./index.module.less";
 import { TextField } from "@mui/material";
+import { useMessage } from "../../../components/Message/useMessage";
 export const ChatHeader = () => {
+  const message = useMessage();
+
   const messageCount = useStore((state) => state.messageList.length);
   const apiKey = useStore((state) => state.apiKey);
   const saveApiKey = useStore((state) => state.saveApiKey);
@@ -11,6 +14,7 @@ export const ChatHeader = () => {
 
   const onClick = () => {
     if (!inputValue) return;
+    message.addMessage({ content: "添加成功" });
     saveApiKey(inputValue);
   };
 
